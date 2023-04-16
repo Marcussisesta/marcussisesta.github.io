@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="et" xml:lang="et">
+<meta charset="UTF-8">
+<head>
+    <title>My Responsive Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ZKjLFzGsD4hzq3JfnXQ5UsC+5x5KNwSfSbRlPNBmGzHJ/GA9ZjKfZIURt0xMKOcJHtjTkChwqgLrQ2uJ7VzusA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            background-image: radial-gradient(black 1px, transparent 0);
+            background-size: 40px 40px;
+            background-position: -19px -19px;
+        }
+        .header {
+            background: white;
+            background-image: radial-gradient(black 1px, transparent 0);
+            background-size: 40px 40px;
+            background-position: -19px -19px;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: translateY(-5px);
+        }
+        .social-icons i {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            max-width: 60px;
+            max-height: 60px;
+            min-width: 30px;
+            min-height: 30px;
+            text-align: center;
+            line-height: 10vw;
+            font-size: 5vw;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .social-icons i:hover {
+            transform: scale(1.2);
+        }
+        .social-icons i.fa-youtube {
+            background-color: #FF0000;
+        }
+        .social-icons a[href^="https://www.youtube.com/"] i {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/YouTube_social_red_circle_%282017%29.svg/2048px-YouTube_social_red_circle_%282017%29.svg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .social-icons i.fa-linkedin {
+            background-color: #0077B5;
+        }
+        .social-icons a[href^="https://www.linkedin.com/"] i {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .social-icons a[href^="mailto:"] i {
+            background-image: url('https://www.freeiconspng.com/thumbs/email-icon/email-icon--clipart-best-22.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .social-icons a {
+                font-size: 18px;
+                margin: 0 5px;
+            }
+        }
+        .video-wrapper {
+            position: relative;
+            max-width: 75%;
+            margin: 0 auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-height: calc(75vh - 100px); /* subtract any additional header/footer heights */
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>Marcus Pruks</h1>
+    <h2>
+        Kandideerimaks tööle :)
+        All on lingid vajalike meedjateni. lähema tutvumise soovile vaadake youtube, kus on ka teised projektid ja videod.
+    </h2>
+</header>
+<!-- Change social media icons -->
+<div class="social-icons">
+    <a href="mailto:marcuspruks@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.youtube.com/channel/UCzfSzcbnma0eGhoLMfDJc-Q"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
+</div>
+<div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/WjV-gtdlG_E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
